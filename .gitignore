@@ -3,5 +3,7 @@
 !/.openai/
 !/.openai/hosting.json
 !/PORTFOLIO_REPO_NOTES.md
+!/README.md
+!/vercel.json
 !/dist/
 !/dist/**
