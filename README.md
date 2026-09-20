@@ -1,6 +1,6 @@
 # Frontier GTM
 
-The portfolio site for [frontiergtm.dev](https://frontiergtm.dev): six working systems across agent-led processes, semantic intelligence and network analysis.
+The portfolio site for [frontiergtm.co](https://www.frontiergtm.co): six working systems across agent-led processes, semantic intelligence and network analysis.
 
 ## Deploying on Vercel
 
