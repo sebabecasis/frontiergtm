@@ -37,11 +37,11 @@ Before publication:
 - Separate the core pipeline from the finance-specific configuration so the general pattern is obvious.
 - Add a sample report or screenshots so a reviewer can understand the output without running paid APIs.
 
-## AI traffic listener — duplicate and generalise
+## AI Agent Traffic Listener — generalised repository created
 
-Current state: no corresponding repository is present in the `sebabecasis` GitHub account.
+Repository: https://github.com/sebabecasis/ai-agent-traffic-listener
 
-Recommendation: locate the source repository, keep any Disciple deployment private, and create a new public repository such as `ai-agent-traffic-listener`.
+Current state: a clean private repository now implements the reusable listener contract with synthetic fixtures and 24 tests. The Disciple deployment and production data remain separate.
 
 Public version:
 
@@ -50,6 +50,13 @@ Public version:
 - Include anonymised request fixtures and the existing test suite.
 - Explain the privacy choice: log matched agent traffic asynchronously without storing human traffic or IP addresses.
 - Present the 0.833% result as an anonymised case-study observation, not as live customer data.
+- Do not rename this LLM Visibility. It measures agent traffic; model-answer visibility remains a future project.
+
+## Semantic Market Profiler — generalised repository created
+
+Repository: https://github.com/sebabecasis/semantic-market-profiler
+
+Current state: a clean private repository now generalises the Hiring Philosophy Profiler into an operator-controlled source-plan, evidence, semantic matching and post-qualification loop. It includes both hiring-philosophy and governed-workflow-readiness fixtures, plus 7 tests.
 
 ## Sentvia and Disciple systems — case studies first
 
