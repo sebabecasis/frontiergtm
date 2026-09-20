@@ -42,30 +42,13 @@ body { background: var(--repo-sand); color: var(--repo-ink); }
   overflow: hidden;
   border-bottom: 0;
   background:
-    radial-gradient(circle at 76% 28%, rgba(232, 239, 228, .36), transparent 26%),
-    linear-gradient(180deg, var(--repo-sky-light) 0%, var(--repo-sky) 58%, #86a7a0 100%);
+    linear-gradient(90deg, rgba(183, 206, 202, .45), rgba(183, 206, 202, .16)),
+    linear-gradient(180deg, rgba(183, 206, 202, .22), rgba(222, 210, 183, .12)),
+    url("/assets/desert-hero-v1.jpg") center 48% / cover no-repeat;
 }
 .repo-intro::before,
 .repo-intro::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  pointer-events: none;
-}
-.repo-intro::before {
-  inset: auto -8% -110px 28%;
-  height: 250px;
-  border-radius: 52% 0 0 0 / 72% 0 0 0;
-  background: linear-gradient(174deg, rgba(238, 231, 213, .16) 8%, rgba(190, 174, 139, .72) 62%, var(--repo-sand) 100%);
-  filter: blur(.2px);
-  transform: rotate(-1.4deg);
-}
-.repo-intro::after {
-  inset: auto 22% -130px -12%;
-  height: 245px;
-  border-radius: 0 74% 0 0 / 0 68% 0 0;
-  background: linear-gradient(170deg, rgba(238, 231, 213, .13) 12%, rgba(156, 143, 116, .34) 54%, #c3b18d 100%);
-  transform: rotate(2deg);
+  display: none;
 }
 .repo-intro > * { position: relative; z-index: 1; }
 .repo-intro .eyebrow { color: rgba(23, 38, 37, .67); letter-spacing: .16em; }
@@ -229,9 +212,8 @@ body { background: var(--repo-sand); color: var(--repo-ink); }
 }
 
 @media (max-width: 600px) {
-  .repo-intro { min-height: 500px; padding: 66px 20px 130px; }
+  .repo-intro { min-height: 500px; padding: 66px 20px 130px; background-position: 44% 50%; }
   .repo-intro h1 { font-size: clamp(3rem, 15vw, 4.8rem); }
-  .repo-intro::before { left: 12%; }
   .folder-switcher { grid-template-columns: 1fr; }
   .folder { min-height: 104px; padding: 20px; border-right: 0; }
   .repository-index { padding: 82px 20px 94px; background-size: 50% 100%; }
