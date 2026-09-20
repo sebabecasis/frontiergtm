@@ -1,0 +1,6 @@
+/*
+!/.gitignore
+!/.openai/
+!/.openai/hosting.json
+!/dist/
+!/dist/**
