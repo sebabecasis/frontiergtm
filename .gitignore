@@ -2,5 +2,6 @@
 !/.gitignore
 !/.openai/
 !/.openai/hosting.json
+!/PORTFOLIO_REPO_NOTES.md
 !/dist/
 !/dist/**

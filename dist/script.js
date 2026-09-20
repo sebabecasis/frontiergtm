@@ -15,12 +15,20 @@ filters.forEach((button) => {
     });
 
     projects.forEach((project) => {
-      const matches = selected === 'all' || project.dataset.category === selected;
+      const categories = project.dataset.category.split(' ');
+      const matches = selected === 'all' || categories.includes(selected);
       project.hidden = !matches;
       if (matches) visible += 1;
     });
 
     emptyState.hidden = visible !== 0;
+  });
+});
+
+document.querySelectorAll('[data-jump-filter]').forEach((link) => {
+  link.addEventListener('click', () => {
+    const target = document.querySelector(`.filter[data-filter="${link.dataset.jumpFilter}"]`);
+    if (target) target.click();
   });
 });
 
