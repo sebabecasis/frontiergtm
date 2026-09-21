@@ -178,7 +178,7 @@ projects.forEach(project=>{
  if(project.group!==lastGroup){const theme=themes[project.group];const section=document.createElement('section');section.className='theme-intro';section.dataset.group=project.group;section.innerHTML='<div><small>'+theme[0]+' / THE IDEA</small><h2>'+theme[1]+'</h2></div><p>'+theme[2]+'</p>';panel.append(section);lastGroup=project.group;}
  const card=document.createElement('article');card.className='repo-card';card.dataset.group=project.group;
  const bullets=project.built.map(item=>'<li>'+item+'</li>').join('');
- card.innerHTML='<div class="repo-top"><div><p class="repo-category">'+project.category+'</p><h3>'+project.title+'</h3></div></div><p class="repo-summary">'+project.summary+'</p><details class="system-details"><summary><span class="expand-label">Click to expand</span><span class="collapse-label">Collapse details</span></summary><ul class="how-built">'+bullets+'</ul></details><div class="repo-bottom"><a href="'+project.href+'" rel="noopener noreferrer">See on GitHub ↗</a></div>';
+ card.innerHTML='<div class="repo-top"><div><p class="repo-category">'+project.category+'</p><h3>'+project.title+'</h3></div></div><p class="repo-summary">'+project.summary+'</p><details class="system-details"><summary><span class="expand-label">Click for more details</span><span class="collapse-label">Collapse details</span></summary><ul class="how-built">'+bullets+'</ul></details><div class="repo-bottom"><a href="'+project.href+'" rel="noopener noreferrer">See on GitHub ↗</a></div>';
  panel.append(card);
 });
 const folders=root.querySelector('.folders');folders.id='folders';folders.innerHTML='';
