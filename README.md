@@ -1,12 +1,12 @@
 # Frontier GTM
 
-The portfolio site for [frontiergtm.co](https://www.frontiergtm.co): six working systems across agent-led processes, semantic intelligence and network analysis.
+The portfolio site for [frontiergtm.dev](https://frontiergtm.dev): six working systems across agent-led processes, semantic intelligence and network analysis.
 
 ## Deploying on Vercel
 
 Import this repository into Vercel with the framework preset set to **Other**. No build command is required; `vercel.json` configures `dist` as the output directory.
 
-The main portfolio is served from `/`, with the repository index also available at `/github`.
+The portfolio is served from `/`. `/github` redirects there. Cookieless analytics loads from `/_vercel/insights/script.js` when Vercel Web Analytics is enabled for the project.
 
 ## Local preview
 
