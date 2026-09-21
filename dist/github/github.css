@@ -155,7 +155,10 @@ body { background: var(--repo-sand); color: var(--repo-ink); }
 .chip-implemented { border-color: var(--repo-sky-deep); color: var(--repo-sky-deep); }
 .chip-experimental { border-color: var(--repo-rust); color: var(--repo-rust); }
 .chip-planned { color: var(--repo-muted); }
-.repository-summary { max-width: 800px; margin: 20px 0 24px; color: #435653; font-size: 1rem; }
+.repository-summary { max-width: 760px; margin: 20px 0 8px; color: var(--repo-ink); font-size: 1.05rem; }
+.how-built { max-width: 720px; margin: 0 0 8px; padding: 0; list-style: none; }
+.how-built li { position: relative; margin: 0; padding: 8px 0 8px 18px; border-top: 1px solid var(--repo-line); color: #435653; font-size: .95rem; }
+.how-built li::before { content: ""; position: absolute; left: 0; top: 16px; width: 7px; height: 1px; background: var(--repo-rust); }
 .repository-detail { margin-bottom: 24px; border-top: 1px solid var(--repo-line); border-bottom: 1px solid var(--repo-line); }
 .repository-detail summary {
   display: flex;
