@@ -1,6 +1,8 @@
 # Frontier GTM
 
-The portfolio site for [frontiergtm.dev](https://frontiergtm.dev): six working systems across agent-led processes, semantic intelligence and network analysis.
+The portfolio site for Frontier GTM: six working systems across agent-led processes, semantic intelligence and network analysis.
+
+The Vercel deployment is live at [www.frontiergtm.co](https://www.frontiergtm.co). `frontiergtm.dev` still resolves to the previous host, so it will not show this portfolio until its DNS points at Vercel.
 
 ## Deploying on Vercel
 
