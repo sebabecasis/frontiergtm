@@ -135,6 +135,7 @@
 @media(max-width:600px){#frontier-five .folders{grid-template-columns:repeat(2,1fr);}#frontier-five .release{grid-template-columns:1fr;padding:28px 20px;gap:18px;}#frontier-five .footer{padding:36px 20px 24px;}#frontier-five .footer-bottom{flex-direction:column;}}
 #frontier-five .hero.personal{grid-template-columns:minmax(0,1.6fr) minmax(170px,.7fr);gap:55px;padding:65px 40px 100px;min-height:440px;}
 #frontier-five .personal h1{margin-bottom:25px;}
+#frontier-five .personal h1 .name{display:inline;color:var(--accent);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.13em;}
 #frontier-five .intro-name{color:var(--accent);font-weight:600;}
 #frontier-five .personal .intro{max-width:590px;font-size:18px;line-height:1.7;}
 #frontier-five .personal .intro+p{margin-top:17px;}
@@ -147,7 +148,7 @@
 #frontier-five .theme-intro p{font-size:16px;line-height:1.8;color:#304b43;margin:0;}
 #frontier-five .theme-intro[hidden]{display:none;}
 @media(max-width:600px){#frontier-five .hero.personal{grid-template-columns:1fr;padding:40px 22px 75px;gap:28px;}#frontier-five .portrait-slot{justify-self:start;min-height:150px;max-width:140px;}#frontier-five .personal .intro{font-size:16px;}#frontier-five .theme-intro{grid-template-columns:1fr;gap:18px;}}
-#frontier-five img.portrait-slot{display:block;object-fit:cover;object-position:50% 35%;height:auto;aspect-ratio:4/5;border:0;max-width:270px;background:transparent;filter:grayscale(1);-webkit-mask-image:radial-gradient(ellipse 52% 55% at 50% 45%,#000 45%,rgba(0,0,0,.94) 60%,transparent 100%);mask-image:radial-gradient(ellipse 52% 55% at 50% 45%,#000 45%,rgba(0,0,0,.94) 60%,transparent 100%);}
+#frontier-five img.portrait-slot{display:block;object-fit:cover;object-position:50% 35%;height:auto;aspect-ratio:4/5;max-width:250px;min-height:0;border:12px solid #faf8f2;background:#faf8f2;filter:none;transform:rotate(-3deg);box-shadow:0 3px 7px #17262518,4px 12px 24px #17262526;}
 @media(max-width:600px){#frontier-five img.portrait-slot{max-width:170px;}}
 #frontier-five .how-built li{color:#eef1e7!important;border-color:#8ba7a0!important;}#frontier-five [data-body=ink] .repo-bottom a{color:#fff3da;}
 #frontier-five .personal .veil{background:linear-gradient(90deg,rgba(220,232,224,.7),rgba(220,232,224,.12) 76%);}
@@ -170,7 +171,7 @@
 </style>
 <div class="site" data-variant="mist" aria-label="Portfolio preview">
 <div class="nav"><a class="brand" href="#">FRONTIER GTM <span>/ PORTFOLIO</span></a><div class="nav-contact"><a href="mailto:sebabecasis1@gmail.com">EMAIL</a><a href="https://www.linkedin.com/in/sabecasis" rel="me noopener noreferrer">LINKEDIN ↗</a></div></div>
-<div class="hero personal"><div class="photo" aria-hidden="true"></div><div class="veil" aria-hidden="true"></div><div class="headline"><p class="kicker">SEB ABECASIS · PERSONAL PORTFOLIO</p><h1>Hi, I’m Seb.</h1><p class="intro">This is my personal portfolio of AI systems, tools and projects I’ve built for work and personal use. My work explores three opportunities that AI has opened up: building agent-led systems, working with semantic intelligence and applying network analysis.</p></div><img class="portrait-slot" src="/assets/seb-abecasis.jpg" alt="Seb Abecasis" width="800" height="800" fetchpriority="high" /></div>
+<div class="hero personal"><div class="photo" aria-hidden="true"></div><div class="veil" aria-hidden="true"></div><div class="headline"><p class="kicker">SEB ABECASIS · PERSONAL PORTFOLIO</p><h1>Hi, I’m <span class="name">Seb</span>.</h1><p class="intro">This is my personal portfolio of AI systems, tools and projects I’ve built for work and personal use. My work explores three opportunities that AI has opened up: building agent-led systems, working with semantic intelligence and applying network analysis.</p></div><img class="portrait-slot" src="/assets/seb-abecasis.jpg" alt="Seb Abecasis" width="800" height="800" fetchpriority="high" /></div>
 <div class="folders"><div class="folder"><small>01 / 3 PROJECTS</small>Agent-led systems</div><div class="folder"><small>02 / 2 PROJECTS</small>Semantic intelligence</div><div class="folder"><small>03 / 1 PROJECT</small>Network analysis</div></div>
 <div class="proof" id="repositories" data-body="ink" aria-label="Projects grouped by three themes">
 
